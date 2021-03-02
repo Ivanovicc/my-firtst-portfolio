@@ -1,38 +1,174 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+/* NAVBAR STYLES */
+
+header {
+    background: url(fondo.gif) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar-brand {
+    font-family: 'Source Code Pro', sans-serif;
+    text-transform: uppercase;
+    color: darkorchid;
+}
+
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 5rem;
+  }
+}
+
+.nav-link {
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+nav a.nav-link {
+    font-weight: bold;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+    color:deeppink !important;
+    margin-right: 0.80rem;
+    border-bottom: 0.1875rem solid rgba(255, 255, 255, 0);
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+  color:rgb(58, 231, 231);
+  border-bottom: 0.1875rem solid deeppink;
+}
+
+.navbar-nav > li > a:hover {
+    transition: .5s;
+    color:rgb(58, 231, 231);
+    border-bottom: 0.1875rem solid deeppink;
+    cursor: pointer;
+}
+
+/* HEADER STYLES */
+
+
+.main {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+
+@media(max-width: 768px) {
+  .main {
+    margin-top: 200px;
+  }
+  .main h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.main h1 {
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.btn-main {
+    border: 1px solid deeppink;
+    border-radius: 0;
+    padding: 0.75rem 0.875rem 0.875rem 0.875rem;
+    color:#ffff;
+    margin: 2rem;
+    text-transform: uppercase;
+}
+
+.btn-main:hover {
+    color: #000;
+    background-color: deeppink;
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* SOCIAL MEDIA WRAPPER */
+
+.media-wrapper > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.media-wrapper > ul > li {
+  list-style: none;
+  margin-top: 2rem;
+  margin-right: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.media-list > li > a {
+  color:#ffff;
+  font-size: 1.875rem;
+}
+
+.media-list > li > a:hover {
+  color:deeppink !important;
+  transition: .5s;
+}
+
+/* ABOUT STYLES */
+
+section {
+  height: 90vh;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.container h2 {
+  text-transform: uppercase !important;
+}
+
+.lead {
+  text-transform: uppercase;
+}
+
+@media(max-width: 768px) {
+  
+  .container h2 {
+    font-size: 1.50rem;
+  }
+  .lead {
+    font-size: 1.25rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.circular--portrait{
+ position: relative;
+ width: 350px;
+ height: 350px;
+ overflow: hidden;
+ border-radius: 50%;
+ margin-left: auto;
+ margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+@media(max-width: 768px) {
+  .circular--portrait {
+    width: 200px;
+    height: 200px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circular--portrait img {
+  width: 100%;
+  height: auto;
 }
