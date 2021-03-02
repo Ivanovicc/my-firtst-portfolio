@@ -11,11 +11,11 @@ const NavBar = () => {
 
   return (
     <header className="header-wrapper">
-      <nav className="navbar navbar-expand-lg bg-transparent navbar-fixed-top">
+      <nav className="navbar navbar-expand-lg fixed-top scrolling-navbar">
         <div className="container">
           <div className="container-fluid">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <FontAwesomeIcon icon={faBars} style={{ color: 'rgba(45, 223, 208)' }} />
+              <FontAwesomeIcon icon={faBars} style={{ color: 'deeppink' }} />
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav ml-auto mr-auto">
@@ -45,10 +45,28 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="projects">Proyectos</Link>
+                  <Link className="nav-link"
+                    to="projects"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Proyectos
+                    </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="contact" >Contacto</Link>
+                  <Link className="nav-link"
+                    to="contact"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Contacto
+                    </Link>
                 </li>
               </ul>
             </div>

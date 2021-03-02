@@ -8,10 +8,15 @@ header {
     height: 100vh;
 }
 
-.navbar-brand {
-    font-family: 'Source Code Pro', sans-serif;
-    text-transform: uppercase;
-    color: darkorchid;
+@media(max-width: 768px) {
+  header {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+nav {
+  background-color: rgba(16,15,16,255) !important;
 }
 
 @media(max-width: 768px) {
@@ -38,14 +43,13 @@ nav ul li {
     border-bottom: 0.1875rem solid rgba(255, 255, 255, 0);
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  color:rgb(58, 231, 231);
-  border-bottom: 0.1875rem solid deeppink;
+.navbar-nav > li > .nav-link.active, .navbar-nav > li > .nav-link:focus {
+  border-bottom: 0.1875rem solid deeppink !important;
+  outline: none;
 }
 
 .navbar-nav > li > a:hover {
     transition: .5s;
-    color:rgb(58, 231, 231);
     border-bottom: 0.1875rem solid deeppink;
     cursor: pointer;
 }
@@ -129,25 +133,41 @@ nav ul li {
 /* ABOUT STYLES */
 
 section {
-  height: 90vh;
+  height: 100vh;
+  padding: 4rem;
   font-family: 'Source Code Pro', sans-serif;
+  background-color: rgba(16,15,16,255);
+}
+
+@media(max-width: 768px) {
+  section {
+    height: 100%;
+    padding: 4rem;
+  }
+}
+
+.container {
+  background-color: transparent;
 }
 
 .container h2 {
+  color: #ffff;
   text-transform: uppercase !important;
 }
 
 .lead {
+  color: #ffff;
   text-transform: uppercase;
 }
 
 @media(max-width: 768px) {
   
   .container h2 {
-    font-size: 1.50rem;
+    font-size: 1.60rem;
+    margin-bottom: 1rem;
   }
   .lead {
-    font-size: 1.25rem;
+    font-size: 1.20rem;
   }
 }
 
@@ -165,6 +185,7 @@ section {
   .circular--portrait {
     width: 200px;
     height: 200px;
+    margin-top: 1.50rem;
   }
 }
 
