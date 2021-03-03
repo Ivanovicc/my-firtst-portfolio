@@ -2,11 +2,11 @@ import React from 'react'
 import MyCV from '../MyCV.pdf';
 import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
-const Header = () => {
+const Header = ({ id }) => {
 
   return (
     <div className="header-wraper">
-      <div className="main">
+      <div className="main" id={id}>
         <h1>Hola, soy Ivan Acosta Carabajal!
           <br />
           Front End Developer.</h1>

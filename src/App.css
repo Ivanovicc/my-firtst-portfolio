@@ -44,7 +44,7 @@ nav ul li {
 }
 
 .navbar-nav > li > .nav-link.active, .navbar-nav > li > .nav-link:focus {
-  border-bottom: 0.1875rem solid deeppink !important;
+  border-bottom: 0.1875rem solid deeppink;
   outline: none;
 }
 
@@ -126,7 +126,7 @@ nav ul li {
 }
 
 .media-list > li > a:hover {
-  color:deeppink !important;
+  color:deeppink ;
   transition: .5s;
 }
 
@@ -152,12 +152,11 @@ section {
 
 .container h2 {
   color: #ffff;
-  text-transform: uppercase !important;
+  text-transform: uppercase;
 }
 
 .lead {
   color: #ffff;
-  text-transform: uppercase;
 }
 
 @media(max-width: 768px) {
@@ -173,10 +172,11 @@ section {
 
 .circular--portrait{
  position: relative;
- width: 350px;
- height: 350px;
+ width: 300px;
+ height: 300px;
  overflow: hidden;
  border-radius: 50%;
+ margin-bottom: 2rem;
  margin-left: auto;
  margin-right: auto;
 }
@@ -185,7 +185,6 @@ section {
   .circular--portrait {
     width: 200px;
     height: 200px;
-    margin-top: 1.50rem;
   }
 }
 

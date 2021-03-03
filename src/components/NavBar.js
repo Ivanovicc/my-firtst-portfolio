@@ -1,13 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
-
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  }
 
   return (
     <header className="header-wrapper">
@@ -21,13 +17,12 @@ const NavBar = () => {
               <ul className="navbar-nav ml-auto mr-auto">
                 <li className="nav-item active">
                   <Link className="nav-link"
-                    to="home"
+                    to="Home"
                     activeClass="active"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    onClick={scrollToTop}
                   >
                     Inicio
                     </Link>
@@ -46,7 +41,7 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link"
-                    to="projects"
+                    to="Projects"
                     activeClass="active"
                     spy={true}
                     smooth={true}
@@ -58,7 +53,7 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link"
-                    to="contact"
+                    to="Contact"
                     activeClass="active"
                     spy={true}
                     smooth={true}
