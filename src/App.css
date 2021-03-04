@@ -192,3 +192,33 @@ section {
   width: 100%;
   height: auto;
 }
+
+/* PROJECTS STYLES */
+
+.circular--portrait-mini{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: darkgray;
+ }
+
+ .circular--portrait-mini img {
+  width: 60%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.work-title {
+  font-size: 1.75rem;
+}
+
+.work-info {
+  color: #ffff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
